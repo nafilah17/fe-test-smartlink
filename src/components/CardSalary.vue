@@ -220,12 +220,12 @@
                     <h4>Total Gaji Bersih<b-icon-check-circle></b-icon-check-circle></h4>
                     <p></p>
                 </b-col>
-                <b-col >
+                <b-col class="mt-3">
                     <h4 class="font-color-red">Rp. 2.124.000</h4>
                 </b-col>
             </b-row>
             <small class="smallText">Nominal aktif yang diterima karyawan setelah ditambah komisi dikurangi pembayaran tanggungan (jika ada)</small>
-            <b-button block variant="primary">Lanjutkan</b-button>
+            <b-button class="mt-3" href="/detail-pembayaran" block variant="primary">Lanjutkan</b-button>
         </div>
     </div>
 </template>
@@ -253,6 +253,7 @@ export default {
 
 <style>
 .cardSalary {
+    text-align: center;
     border: 1px solid #eee;
     margin-top: 10px;
     margin-bottom: 10px;

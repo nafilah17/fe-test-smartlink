@@ -3,7 +3,6 @@
     <Navbar />
     <div class="container">
       <CardName />
-
       <CardSalary />
       </div>
 
