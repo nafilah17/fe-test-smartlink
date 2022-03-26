@@ -1,11 +1,24 @@
 <template>
     <div>
         <div class="cardSalary">
+            <h4>Faktur Gaji</h4>
+            <hr/>
+            <h5>Nama: </h5>
+            <p> - </p>
+            <hr/>
+            <b-row class="align-items-center">
+                <b-col class="ml-4">Masuk </b-col>
+                <b-col><b-button variant="link" v-b-modal.modalUbahKehadiran>Ubah Kehadiran</b-button></b-col>
+            </b-row>
+            <!-- modal ubah kehadiran -->
+            <modal-ubah-kehadiran title="Ubah Kehadiran" />
+        </div>
+        <div class="cardSalary">
             <div class="titleCard">Gaji</div>
             <hr/>
             <b-row class="cardRow">
                 <b-col>
-                    <strong>Gaji Pokok</strong><br />
+                    <strong>{Gaji Pokok}</strong><br />
                     <small class="text-muted">800.000 x 1 periode</small>
                 </b-col>
                 <b-col >
@@ -231,6 +244,7 @@
 </template>
 
 <script>
+import ModalUbahKehadiran from './modals/ModalUbahKehadiran.vue'
 import ModalUangAbsen from './modals/ModalUangAbsen.vue'
 import ModalGajiPokok from './modals/ModalGajiPokok.vue'
 import ModalUangTransport from './modals/ModalUangTransport.vue'
@@ -245,13 +259,15 @@ import ModalTanggunganDenda from './modals/ModalTanggunganDenda.vue'
 
 
 export default {
-  components: {  ModalUangAbsen, ModalUangTransport, ModalGajiPokok, ModalUangMakan, ModalUangSnack, ModalTambahKomisi, ModalTambahTanggungan, ModalTanggunganHilang, ModalTanggunganDenda,  ModalBonusTarget},
-    name: 'cardSalary'
+  components: { ModalUbahKehadiran, ModalUangAbsen, ModalUangTransport, ModalGajiPokok, ModalUangMakan, ModalUangSnack, ModalTambahKomisi, ModalTambahTanggungan, ModalTanggunganHilang, ModalTanggunganDenda,  ModalBonusTarget},
+    name: 'cardSalary',
+    props: ['inquiry'],
 
 }
 </script>
 
 <style>
+
 .cardSalary {
     text-align: center;
     border: 1px solid #eee;
