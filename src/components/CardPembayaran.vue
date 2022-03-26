@@ -90,7 +90,7 @@
                 required
                 ></b-form-input>
             </b-form-group>
-        <b-button block type="submit" variant="primary" href="/detail-faktur" >Submit</b-button>
+        <b-button block type="submit" variant="primary" href="/detail-faktur" >Submit Gaji</b-button>
     </b-form>
     <b-button class="mt-2" block href="/" variant="outline-primary">Back</b-button>
     <!-- <b-card class="mt-3" header="Form Data Result">

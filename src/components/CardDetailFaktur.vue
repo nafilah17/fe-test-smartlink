@@ -209,8 +209,18 @@
                 </b-col>
             </b-row>
             <small class="smallText">Nominal aktif yang diterima karyawan setelah ditambah komisi dikurangi pembayaran tanggungan (jika ada)</small>
-            <b-button class="mt-3" href="/detail-pembayaran" block variant="primary">Lanjutkan</b-button>
+            
         </div>
+
+        <!-- Total gaji bersih -->
+        <div class="cardSalary">
+           
+            <small class="smallText">Keterangan</small>
+            <p>Lebih Semangat Lagi ya!</p>
+            <b-button class="mt-3" href="/detail-pembayaran" block variant="info">Cetak</b-button>
+        </div>
+
+        
     </div>
 </template>
 
